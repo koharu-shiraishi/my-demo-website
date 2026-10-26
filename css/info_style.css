@@ -1,0 +1,94 @@
+:root {
+  --text: #1a1a1a;
+  --link: #1a4d8f;
+  --bg-code: #f5f5f5;
+}
+* {
+  font-size: 15px;
+  background-color: var(--bg-code);
+}
+body {
+  font-family: "Noto Sans", "Fira Sans", sans-serif;
+  line-height: 1.65;
+  color: var(--text);
+  max-width: 70ch;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+code,
+pre {
+  font-family: "JetBrains Mono NL", "Fira Mono", monospace;
+}
+pre {
+  background: var(--bg-code);
+  padding: 1rem;
+  border-radius: 4px;
+  overflow-x: auto;
+}
+a {
+  color: var(--link);
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+p {
+  text-align: justify;
+}
+
+.chapter-nav {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3rem;
+  padding-top: 1rem;
+  border-top: 1px solid #ddd;
+  font-size: 0.95rem;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  border-bottom: 2px solid #1a4d8f;
+}
+
+.site-name a {
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: #1a1a1a;
+}
+
+nav[aria-label="Site navigation"] ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+nav[aria-label="Site navigation"] a {
+  text-decoration: none;
+  color: #1a4d8f;
+  padding-bottom: 2px;
+  border-bottom: 2px solid transparent;
+}
+
+nav[aria-label="Site navigation"] a:hover,
+nav[aria-label="Site navigation"] a:focus {
+  border-bottom-color: #1a4d8f;
+}
+
+nav[aria-label="Site navigation"] a[aria-current="page"] {
+  border-bottom-color: #1a4d8f;
+  font-weight: bold;
+}
+
+.chapter-nav a {
+  text-decoration: none;
+  color: #1a4d8f;
+}
+.chapter-nav a:hover {
+  text-decoration: underline;
+}

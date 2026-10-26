@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/info_style.css" />
+    <link rel="prev" href="secret-behind.html" />
+    <link rel="next" href="wysiwym-intro.html" />
+    <title>A strange look with familiar thing – Why Not .docx?</title>
+  </head>
+  <body>
+    <header>
+      <p class="site-name"><a href="index.html">Why Not .docx?</a></p>
+      <nav aria-label="Site navigation">
+        <ul class="naviga">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="wysiwym-intro.html">WYSIWYM</a></li>
+          <li><a href="chronology.html">Chronology</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <article>
+        <h1>Where's My Familiar Icon?</h1>
+        <p>
+          You append <code>.zip</code> to the end of the file name. A popup
+          warns you that the file might become unusable if you change its
+          format. You hesitate for a second, then click through anyway — you've
+          come this far. The popup disappears, and so does the familiar blue "W"
+          icon. In its place: a plain, grey icon — the same one you've seen
+          before, on folders of photos someone compressed before emailing them
+          to you. A question forms in your mind:
+          <em
+            >"Why did my document just turn into one of those zipped folders?
+            What is actually inside it?"</em
+          >
+        </p>
+
+        <h2>Opening the Folder</h2>
+        <p>
+          You right-click the file. Windows 11 shows a short menu of icons, with
+          "Show more options" at the bottom. There, you find "Extract All...".
+          It asks where to save the result; you accept the default. A new folder
+          appears, named exactly like your original document. You open it,
+          expecting to find... your document, somehow. Instead, you find more
+          folders with names like <code>word</code> and <code>docProps</code>,
+          and inside them, files with long names ending in letters you don't
+          recognize. Nothing here looks like a document. You're not looking for
+          a fix anymore. You just want to know what you're looking at.
+        </p>
+
+        <h2>Asking for a Second Opinion</h2>
+        <p>
+          You scroll back to the chat box under that AI summary from earlier.
+          You press the attach button, upload a screenshot of the folder, and
+          type:
+          <em
+            >"What is all this? I just renamed a Word file to .zip and extracted
+            it."</em
+          >
+        </p>
+        <p>
+          The reply explains what you're looking at: this is the internal
+          structure of your <code>.docx</code> file. The files you don't
+          recognize end in <code>.xml</code> — a format for storing structured
+          text, used by this and many other kinds of files. One of them,
+          <code>word/document.xml</code>, holds your actual words.
+        </p>
+        <p>
+          You've never heard of XML before, so you ask:
+          <em>"What is an XML file? I've never seen one."</em> The AI explains:
+          it's a plain text format, readable by both computers and humans, that
+          uses tags to describe pieces of content — similar in spirit to HTML,
+          the format behind most web pages. You open
+          <code>document.xml</code> anyway, out of curiosity. Your sentences are
+          in there, just as the AI said — buried in a single, unbroken wall of
+          text, between tags like <code>&lt;w:r&gt;</code> and
+          <code>&lt;w:rPr&gt;</code>. One more question comes to mind, and you
+          type it into the same chat:
+          <em>"Why does it have to be built like this?"</em>
+        </p>
+      </article>
+      <nav class="chapter-nav" aria-label="Chapter navigation">
+        <a href="secret-behind.html" rel="prev">&larr; A secret behind</a>
+        <a href="wysiwym-intro.html" rel="next">wusiwum &rarr;</a>
+      </nav>
+    </main>
+  </body>
+</html>

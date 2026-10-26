@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/info_style.css" />
+    <link rel="prev" href="main_page.html" />
+    <link rel="next" href="secret-behind.html" />
+    <title>The day your document broke – Why Not .docx?</title>
+  </head>
+  <body>
+    <header>
+      <p class="site-name"><a href="index.html">Why Not .docx?</a></p>
+      <nav aria-label="Site navigation">
+        <ul class="naviga">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="wysiwym-intro.html">WYSIWYM</a></li>
+          <li><a href="chronology.html">Chronology</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <article>
+        <h1>The day your document broke</h1>
+
+        <p>
+          Have you ever had this experience? You spend hours editing a document
+          in Microsoft Word or WPS — styling text, adjusting the layout,
+          polishing every detail. You save it as
+          <code>.docx</code> (or <code>.doc</code>, if your version of Word is
+          older than 2007) and send it to a friend or coworker, hoping for a
+          good response. Instead, you get a message asking what is wrong with
+          your file, along with a screenshot of the document as it appears on
+          their computer: a messy layout you spent hours perfecting, unexpected
+          fonts, broken alignment, white rivers running through the text.
+        </p>
+
+        <h2>Why does the file break on other computers?</h2>
+        <p>
+          You reopen the file on your own computer, and it still renders exactly
+          as you intended. So what happened? Here is the surprising part: your
+          file is not corrupted, and your friend's computer is not broken. The
+          document simply does not look the same everywhere, because a
+          <code>.docx</code> file does not fully describe how it should look. To
+          understand why, we need to look at what is actually inside the file.
+        </p>
+        <aside class="note">
+          <p>
+            This trick only works for <code>.docx</code>. The older
+            <code>.doc</code> format (Word 97–2003) is a completely different,
+            binary format — not a ZIP archive at all, and not human-readable by
+            any trick this simple.
+          </p>
+        </aside>
+      </article>
+      <nav class="chapter-nav" aria-label="Chapter navigation">
+        <a href="main_page.html" rel="prev">&larr; Main page</a>
+        <a href="secret-behind.html" rel="next"
+          >The Dark Side of a Popular Tool &rarr;</a
+        >
+      </nav>
+    </main>
+
+    <footer>
+      <p>Contact information will go here.</p>
+    </footer>
+  </body>
+</html>
